@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Inlämningsuppgift_1_asp.Data;
 
 namespace Inlämningsuppgift_1_asp
 {
@@ -24,6 +26,9 @@ namespace Inlämningsuppgift_1_asp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<Inlämningsuppgift_1_aspContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Inlämningsuppgift_1_aspContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
