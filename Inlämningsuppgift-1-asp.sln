@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inlämningsuppgift-1-asp", "Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp.csproj", "{4160F435-8A1A-4A9A-BB97-8E791D9B763E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4160F435-8A1A-4A9A-BB97-8E791D9B763E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4160F435-8A1A-4A9A-BB97-8E791D9B763E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4160F435-8A1A-4A9A-BB97-8E791D9B763E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4160F435-8A1A-4A9A-BB97-8E791D9B763E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9AFF1C9-8A73-48DE-830D-4746EAAE8A5C}
+	EndGlobalSection
+EndGlobal
