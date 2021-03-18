@@ -15,5 +15,7 @@ namespace Inlämningsuppgift_1_asp.Data
         }
 
         public DbSet<Inlämningsuppgift_1_asp.Models.Event> Event { get; set; }
+        public DbSet<Inlämningsuppgift_1_asp.Models.Attendee> Attendee { get; set; }
+        public DbSet<Inlämningsuppgift_1_asp.Models.Organizer> Organizer { get; set; }
     }
 }

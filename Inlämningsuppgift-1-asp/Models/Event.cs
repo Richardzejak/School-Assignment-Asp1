@@ -10,12 +10,13 @@ namespace Inlämningsuppgift_1_asp.Models
     {
         public int ID { get; set; }
         public string Title { get; set; }
-        public int organizer_id { get; set; }
-        public string description { get; set; }
-        public string place { get; set; }
-        public string address { get; set; }
+        public Organizer Organizer { get; set; }
+        public string Description { get; set; }
+        public string Place { get; set; }
+        public string Address { get; set; }
         [DataType(DataType.Date)]
-        public DateTime date { get; set; }
-        public int spots_available { get; set; }
+        public DateTime Date { get; set; }
+        public int Spots_available { get; set; }
+        public List<Attendee> Attendees { get; set; }
     }
 }

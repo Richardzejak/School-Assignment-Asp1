@@ -17,22 +17,22 @@
                 @Html.DisplayNameFor(model => model.Event[0].Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Event[0].organizer_id)
+                @Html.DisplayNameFor(model => model.Event[0].Organizer)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Event[0].description)
+                @Html.DisplayNameFor(model => model.Event[0].Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Event[0].place)
+                @Html.DisplayNameFor(model => model.Event[0].Place)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Event[0].address)
+                @Html.DisplayNameFor(model => model.Event[0].Address)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Event[0].date)
+                @Html.DisplayNameFor(model => model.Event[0].Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Event[0].spots_available)
+                @Html.DisplayNameFor(model => model.Event[0].Spots_available)
             </th>
             <th></th>
         </tr>
@@ -44,22 +44,22 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.organizer_id)
+                @Html.DisplayFor(modelItem => item.Organizer.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.description)
+                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.place)
+                @Html.DisplayFor(modelItem => item.Place)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.address)
+                @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.date)
+                @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.spots_available)
+                @Html.DisplayFor(modelItem => item.Spots_available)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

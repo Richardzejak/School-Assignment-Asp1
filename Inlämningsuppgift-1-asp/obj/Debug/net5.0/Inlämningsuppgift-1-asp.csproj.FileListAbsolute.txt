@@ -9,7 +9,6 @@ D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\bin\Debug\net5.0\ref\
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\bin\Debug\net5.0\Inlämningsuppgift-1-asp.pdb
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\bin\Debug\net5.0\Inlämningsuppgift-1-asp.Views.dll
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\bin\Debug\net5.0\Inlämningsuppgift-1-asp.Views.pdb
-D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.csprojAssemblyReference.cache
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.GeneratedMSBuildEditorConfig.editorconfig
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.AssemblyInfoInputs.cache
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.AssemblyInfo.cs
@@ -170,3 +169,4 @@ D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razo
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Details.cshtml.g.cs
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Edit.cshtml.g.cs
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Index.cshtml.g.cs
+D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.csprojAssemblyReference.cache
