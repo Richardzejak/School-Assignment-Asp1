@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Inlämningsuppgift_1_asp.Data;
 using Inlämningsuppgift_1_asp.Models;
+using System.Diagnostics;
 
 namespace Inlämningsuppgift_1_asp.Pages.Events
 {
@@ -35,6 +36,15 @@ namespace Inlämningsuppgift_1_asp.Pages.Events
                 return NotFound();
             }
             return Page();
+        }
+
+        public async Task<IActionResult> OnPost(int? id)
+        {
+            Event = await _context.Event.Include(e => e.Organizer).FirstOrDefaultAsync(m => m.ID == id);
+            Console.Beep();
+            return Page();
+
+           // new Attendee {Name = "User1", Email = "User1@hotmail.com", Phone_number = 15129512 };
         }
     }
 }
