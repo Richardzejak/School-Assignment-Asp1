@@ -28,7 +28,7 @@ namespace Inlämningsuppgift_1_asp.Pages.Events
                 return NotFound();
             }
 
-            Event = await _context.Event.FirstOrDefaultAsync(m => m.ID == id);
+            Event = await _context.Event.Include(e=>e.Organizer).FirstOrDefaultAsync(m => m.ID == id);
 
             if (Event == null)
             {
