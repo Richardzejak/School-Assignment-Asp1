@@ -167,3 +167,4 @@ D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\bin\Debug\net5.0\runt
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Details.cshtml.g.cs
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Index.cshtml.g.cs
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.csprojAssemblyReference.cache
+D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Create.cshtml.g.cs

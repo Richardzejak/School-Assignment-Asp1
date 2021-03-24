@@ -10,7 +10,7 @@ namespace Inlämningsuppgift_1_asp.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public int Phone_number { get; set; }
-        public List<Event> Events { get; set; }
+        public string Phone_number { get; set; }
+        public ICollection<Event> Events { get; set; }
     }
 }

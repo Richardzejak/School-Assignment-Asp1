@@ -12,6 +12,9 @@ namespace Inlämningsuppgift_1_asp.Data
         {
             context.Database.EnsureCreated();
 
+            context.AttendeeEvent.RemoveRange(context.AttendeeEvent);
+            context.SaveChanges();
+
             context.Event.RemoveRange(context.Event);
             context.SaveChanges();
 
@@ -20,17 +23,15 @@ namespace Inlämningsuppgift_1_asp.Data
 
             var organizers = new Organizer[]
             {
-                new Organizer{Name="Ricky-Conserts", Email="Ricky-conserts@gmail.com", Phone_number=580027173},
-                new Organizer{Name="The Organizers", Email="organizers_@gmail.com", Phone_number=340582131},
-                new Organizer{Name="Music Camp", Email="John_Doe@mc.com", Phone_number=412905919},
-                new Organizer{Name="Dance From Nightfall", Email="DFN@hotmail.com", Phone_number=11231519},
-                new Organizer{Name="Lord of the Events", Email="Lote@hotmail.com", Phone_number=131223123},
-                new Organizer{Name="Valencia Events", Email="Valencia@events.com", Phone_number=698123133}
+                new Organizer{Name="Ricky-Conserts", Email="Ricky-conserts@gmail.com", Phone_number="580027173"},
+                new Organizer{Name="The Organizers", Email="organizers_@gmail.com", Phone_number="340582131"},
+                new Organizer{Name="Music Camp", Email="John_Doe@mc.com", Phone_number="412905919"},
+                new Organizer{Name="Dance From Nightfall", Email="DFN@hotmail.com", Phone_number="11231519"},
+                new Organizer{Name="Lord of the Events", Email="Lote@hotmail.com", Phone_number="131223123"},
+                new Organizer{Name="Valencia Events", Email="Valencia@events.com", Phone_number="698123133"}
             };
             context.Organizer.AddRange(organizers);
             context.SaveChanges();
-
-
 
             var events = new Event[]
             {
@@ -47,6 +48,20 @@ namespace Inlämningsuppgift_1_asp.Data
                    Place="United States", Date=DateTime.Parse("2021-09-21"), Spots_available=1640},
             };
             context.Event.AddRange(events);
+            context.SaveChanges();
+
+            if(context.Attendee.Any())
+            {
+                return;
+            }
+
+            var attendees = new Attendee[]
+{
+                new Attendee{Name="User3", Email="User1@hotmail.com", Phone_number="0148124012"},
+                new Attendee{Name="User2", Email="User2@hotmail.com", Phone_number="1024012412"},
+                new Attendee{Name="User1", Email="User3@hotmail.com", Phone_number="1240124050"}
+};
+            context.Attendee.AddRange(attendees);
             context.SaveChanges();
         }
     }

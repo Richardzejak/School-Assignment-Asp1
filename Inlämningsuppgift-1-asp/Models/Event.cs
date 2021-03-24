@@ -17,6 +17,6 @@ namespace Inlämningsuppgift_1_asp.Models
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         public int Spots_available { get; set; }
-        public List<Attendee> Attendees { get; set; }
+        public ICollection<AttendeeEvent> AttendeeEvents { get; set; }
     }
 }
