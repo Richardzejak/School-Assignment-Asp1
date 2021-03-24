@@ -23,6 +23,8 @@ namespace Inlämningsuppgift_1_asp.Pages.Events
         public Event Event { get; set; }
         public Attendee Attendee { get; set; }
 
+        public bool hasJoined { get; set; }
+
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -31,6 +33,8 @@ namespace Inlämningsuppgift_1_asp.Pages.Events
             }
 
             Event = await _context.Event.Include(e => e.Organizer).FirstOrDefaultAsync(m => m.ID == id);
+
+            hasJoined = await _context.AttendeeEvent.Where(e => e.Event.ID == id && e.Attendee.ID == 1).FirstOrDefaultAsync(a => a.Attendee.ID ==1 ) == default ? false : true;
 
             if (Event == null)
             {

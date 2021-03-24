@@ -168,3 +168,4 @@ D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razo
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Index.cshtml.g.cs
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Inlämningsuppgift-1-asp.csprojAssemblyReference.cache
 D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Create.cshtml.g.cs
+D:\Repos\Inlämningsuppgift-1-asp\Inlämningsuppgift-1-asp\obj\Debug\net5.0\Razor\Pages\Events\Myevents.cshtml.g.cs

@@ -55,7 +55,15 @@
     </dl>
 </div>
 <div>
-    <!--<form method="post"><input type="submit" class="btn btn-primary" value="Join this Event"></input></form>-->
-    <a class="btn btn-primary" asp-route-id="@Model.Event.ID" asp-page="./Create">Join this Event</a>
-    <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+    @if (Model.hasJoined == false)
+    {
+        <a class="btn btn-primary" asp-route-id="@Model.Event.ID" asp-page="./Create">Join this Event</a>
+        <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+    }
+    @if (Model.hasJoined == true)
+    {
+        <h1>Joined Event!</h1>
+        <a class="btn btn-primary" asp-page="./Myevents">My Events</a>
+        <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+    }
 </div>

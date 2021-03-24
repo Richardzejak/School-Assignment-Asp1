@@ -30,7 +30,7 @@ namespace Inlämningsuppgift_1_asp.Pages.Events
             _context.AttendeeEvent.Add(new AttendeeEvent { Event = Event, Attendee = Attendee });
             _context.SaveChanges();
 
-            return RedirectToPage("./Details", new { id = id });
+            return RedirectToPage("./Details", new { id });
         }
     }
 }

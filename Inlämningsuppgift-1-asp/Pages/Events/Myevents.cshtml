@@ -1,0 +1,64 @@
+﻿@page
+@model Inlämningsuppgift_1_asp.Pages.Events.MyeventsModel
+
+@{
+    ViewData["Title"] = "Myevents";
+}
+
+<h1>My Events</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Organizer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Place)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AttendeeEvent[0].Event.Spots_available)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.AttendeeEvent) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Organizer.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Place)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event.Spots_available)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
